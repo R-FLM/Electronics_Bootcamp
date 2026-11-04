@@ -1075,6 +1075,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "First_lib:GND"
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -1087,8 +1088,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "GND"
-				(at 7.366 0 0)
+			(property "Reference" "#PWR"
+				(at 0 -7.366 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1099,7 +1100,7 @@
 				)
 			)
 			(property "Value" "GND"
-				(at 7.366 0 0)
+				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1131,7 +1132,7 @@
 				)
 			)
 			(property "Description" "Ground"
-				(at 0 -2.286 0)
+				(at 0 -9.398 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1155,19 +1156,7 @@
 			(symbol "GND_1_1"
 				(polyline
 					(pts
-						(xy 2.54 0) (xy 3.81 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 0) (xy 3.8127 0.8038) (xy 3.8127 -0.8038) (xy 5.08 0)
+						(xy 0 -3.81) (xy 0.8038 -2.5427) (xy -0.8038 -2.5427) (xy 0 -3.81)
 					)
 					(stroke
 						(width 0)
@@ -1177,8 +1166,8 @@
 						(type outline)
 					)
 				)
-				(pin power_out line
-					(at 0 0 0)
+				(pin power_in line
+					(at 0 0 270)
 					(length 2.54)
 					(name ""
 						(effects
@@ -2177,6 +2166,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "First_lib:VCC"
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -2189,8 +2179,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "VCC"
-				(at 3.81 0 0)
+			(property "Reference" "#PWR"
+				(at 0 7.366 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2201,7 +2191,7 @@
 				)
 			)
 			(property "Value" "VCC"
-				(at 3.81 0 0)
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2233,7 +2223,7 @@
 				)
 			)
 			(property "Description" "Voltage at the Common Collector"
-				(at 0 -2.54 0)
+				(at 0 9.652 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2257,7 +2247,7 @@
 			(symbol "VCC_0_1"
 				(polyline
 					(pts
-						(xy -1.27 0) (xy 1.27 0) (xy 0.0054 0.8064)
+						(xy 0 3.81) (xy 0.8064 2.5454)
 					)
 					(stroke
 						(width 0)
@@ -2269,7 +2259,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 0) (xy 0.0054 -0.8064)
+						(xy 0 2.54) (xy 0 3.81) (xy -0.8064 2.5454)
 					)
 					(stroke
 						(width 0)
@@ -2281,8 +2271,8 @@
 				)
 			)
 			(symbol "VCC_1_1"
-				(pin power_out line
-					(at -2.54 0 0)
+				(pin power_in line
+					(at 0 0 90)
 					(length 2.54)
 					(name ""
 						(effects
@@ -2291,7 +2281,7 @@
 							)
 						)
 					)
-					(number ""
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2538,6 +2528,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text_box "MCU"
 		(exclude_from_sim no)
@@ -2627,6 +2732,26 @@
 		)
 		(uuid "b01c71b3-f576-4257-af70-1d92ec43d0bb")
 	)
+	(text_box ""
+		(exclude_from_sim no)
+		(at 133.35 13.97 0)
+		(size 25.4 20.32)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type dot)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "c9bd0940-529f-4eea-a9ac-4eaa658c99e0")
+	)
 	(text_box "Connectors"
 		(exclude_from_sim no)
 		(at 109.22 62.23 0)
@@ -2700,6 +2825,14 @@
 	(no_connect
 		(at 33.02 85.09)
 		(uuid "442b02e4-870c-4b5b-8767-62de31d9e702")
+	)
+	(no_connect
+		(at 67.31 110.49)
+		(uuid "5c5d51f7-020d-41e5-b630-5ff53f1f3259")
+	)
+	(no_connect
+		(at 67.31 113.03)
+		(uuid "9863155b-2e5b-4a7e-b020-47a5abd008fe")
 	)
 	(no_connect
 		(at 33.02 82.55)
@@ -4327,7 +4460,7 @@
 		(dnp no)
 		(uuid "154dc0eb-1471-46b5-addf-4bb03a044a84")
 		(property "Reference" "J1"
-			(at 133.35 70.358 0)
+			(at 133.604 70.612 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4436,8 +4569,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1aa03d0d-048d-4963-9ab9-89bc149f8ef5")
-		(property "Reference" "D1"
-			(at 80.01 44.4499 90)
+		(property "Reference" "D2"
+			(at 80.01 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4510,7 +4643,7 @@
 		(instances
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "D1")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -4518,7 +4651,7 @@
 	)
 	(symbol
 		(lib_id "First_lib:VCC")
-		(at 165.1 68.58 90)
+		(at 48.26 72.39 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4526,9 +4659,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "21029785-eb6c-44d1-b339-e3d450b0bb81")
-		(property "Reference" "VCC4"
-			(at 165.1 64.77 0)
+		(uuid "23d9b2fc-fd95-4e8a-8ce5-d853d31d801d")
+		(property "Reference" "#PWR019"
+			(at 48.26 65.024 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4539,18 +4672,17 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 163.068 66.04 90)
+			(at 48.26 66.04 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 68.58 0)
+			(at 48.26 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4561,7 +4693,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 68.58 0)
+			(at 48.26 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4572,7 +4704,7 @@
 			)
 		)
 		(property "Description" "Voltage at the Common Collector"
-			(at 167.64 68.58 0)
+			(at 48.26 62.738 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4582,91 +4714,13 @@
 				)
 			)
 		)
-		(pin ""
-			(uuid "2daa0d3b-9bbb-4cf5-9eb0-d8053d8318c0")
+		(pin "1"
+			(uuid "5f6caba8-95d8-4949-b7b8-ebe5d68fc55e")
 		)
 		(instances
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "VCC4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "First_lib:GND")
-		(at 48.26 143.51 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "221b5ff2-98eb-4a95-b4c3-dbedffbe8d86")
-		(property "Reference" "GND14"
-			(at 48.26 150.876 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 48.26 149.098 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 48.26 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 48.26 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Ground"
-			(at 45.974 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin ""
-			(uuid "8ea1ecc9-8fde-4053-bf15-8ecf257664a6")
-		)
-		(instances
-			(project "First_kicad_proj"
-				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "GND14")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -4752,86 +4806,8 @@
 		)
 	)
 	(symbol
-		(lib_id "First_lib:VCC")
-		(at 50.8 69.85 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "37a6fad5-375f-47b8-a4b7-98fc1328c8d1")
-		(property "Reference" "VCC5"
-			(at 50.8 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VCC"
-			(at 50.8 64.516 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Voltage at the Common Collector"
-			(at 53.34 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin ""
-			(uuid "2daa0d3b-9bbb-4cf5-9eb0-d8053d8318c1")
-		)
-		(instances
-			(project "First_kicad_proj"
-				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "VCC5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "First_lib:GND")
-		(at 162.56 104.14 270)
+		(at 48.26 143.51 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4839,9 +4815,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "386126ae-c329-4f1d-b076-54d07d66d8ab")
-		(property "Reference" "GND8"
-			(at 162.56 111.506 0)
+		(uuid "2ea4dce5-e5f3-43c7-98e2-7a3f5c626333")
+		(property "Reference" "#PWR017"
+			(at 48.26 150.876 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4852,18 +4828,17 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 160.528 110.744 90)
+			(at 48.26 149.86 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 162.56 104.14 0)
+			(at 48.26 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4874,7 +4849,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 162.56 104.14 0)
+			(at 48.26 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4885,7 +4860,7 @@
 			)
 		)
 		(property "Description" "Ground"
-			(at 160.274 104.14 0)
+			(at 48.26 152.908 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4896,12 +4871,168 @@
 			)
 		)
 		(pin ""
-			(uuid "105b3ad0-1d9e-4448-bb90-964bf170e9a1")
+			(uuid "f8a0ec4f-9d8f-467c-9db3-0a9fae294705")
 		)
 		(instances
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "GND8")
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "First_lib:GND")
+		(at 25.4 39.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2f93b24b-82a1-4780-a11c-dce2d5c68862")
+		(property "Reference" "#PWR01"
+			(at 25.4 46.736 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 25.4 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Ground"
+			(at 25.4 48.768 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin ""
+			(uuid "c5cca833-956e-4059-bc2a-f8638f5ce431")
+		)
+		(instances
+			(project "First_kicad_proj"
+				(path "/bf263037-1375-4c88-8757-79a366da6f70"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 139.7 22.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "37b582b1-35f0-41f2-bc9a-0aab792afb5f")
+		(property "Reference" "#FLG1"
+			(at 139.7 20.955 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 139.7 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 139.7 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cdc09822-9c33-4601-944b-efa6dc3ef759")
+		)
+		(instances
+			(project "First_kicad_proj"
+				(path "/bf263037-1375-4c88-8757-79a366da6f70"
+					(reference "#FLG1")
 					(unit 1)
 				)
 			)
@@ -4918,8 +5049,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "39de9af9-d573-41d5-86b2-cb4766a51ad3")
-		(property "Reference" "C6"
-			(at 28.702 32.258 90)
+		(property "Reference" "C1"
+			(at 28.702 32.004 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4992,162 +5123,7 @@
 		(instances
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "First_lib:GND")
-		(at 101.6 101.6 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3e9196ad-14cd-466b-b03a-6202db01c85c")
-		(property "Reference" "GND10"
-			(at 101.6 108.966 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 101.6 107.95 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 101.6 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Ground"
-			(at 99.314 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin ""
-			(uuid "105b3ad0-1d9e-4448-bb90-964bf170e9a2")
-		)
-		(instances
-			(project "First_kicad_proj"
-				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "GND10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "First_lib:GND")
-		(at 53.34 143.51 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "40b471f0-0114-46fc-8a79-45164fd75b6a")
-		(property "Reference" "GND13"
-			(at 53.34 150.876 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 53.34 149.098 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Ground"
-			(at 51.054 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin ""
-			(uuid "2b4bb60a-5b58-43dd-a15a-ea52aa587a28")
-		)
-		(instances
-			(project "First_kicad_proj"
-				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "GND13")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -5164,7 +5140,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4179c53b-84b5-44d0-8278-6736722d028b")
-		(property "Reference" "C1"
+		(property "Reference" "C5"
 			(at 90.17 114.046 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5237,15 +5213,16 @@
 		(instances
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "C1")
+					(reference "C5")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "First_lib:VCC")
-		(at 53.34 69.85 90)
+		(lib_id "power:PWR_FLAG")
+		(at 151.13 24.13 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5253,9 +5230,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "473c137e-e03c-4db4-b77a-cb2e5ca9d5cb")
-		(property "Reference" "VCC6"
-			(at 53.34 66.04 0)
+		(uuid "49f455b0-c0db-429e-a897-20bdd731cb8c")
+		(property "Reference" "#FLG2"
+			(at 151.13 26.035 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5265,19 +5242,18 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
-			(at 53.34 64.516 0)
+		(property "Value" "PWR_FLAG"
+			(at 151.13 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 69.85 0)
+			(at 151.13 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5288,7 +5264,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 69.85 0)
+			(at 151.13 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5298,8 +5274,8 @@
 				)
 			)
 		)
-		(property "Description" "Voltage at the Common Collector"
-			(at 55.88 69.85 0)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 151.13 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5309,91 +5285,13 @@
 				)
 			)
 		)
-		(pin ""
-			(uuid "adf72af7-53a9-4e5b-8e80-30fd06684667")
+		(pin "1"
+			(uuid "2f651eb4-e0e5-4d2b-b10c-ab8dd17b3657")
 		)
 		(instances
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "VCC6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "First_lib:GND")
-		(at 25.4 39.37 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4cdefd7e-87bf-4677-a761-bab64ca09e54")
-		(property "Reference" "GND3"
-			(at 25.4 46.736 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 23.368 45.974 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 25.4 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 25.4 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Ground"
-			(at 23.114 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin ""
-			(uuid "105b3ad0-1d9e-4448-bb90-964bf170e9a3")
-		)
-		(instances
-			(project "First_kicad_proj"
-				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "GND3")
+					(reference "#FLG2")
 					(unit 1)
 				)
 			)
@@ -5411,7 +5309,7 @@
 		(dnp no)
 		(uuid "4fabfcb8-8609-4712-b736-a195006c0abe")
 		(property "Reference" "J2"
-			(at 140.97 70.358 0)
+			(at 140.97 70.612 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5521,7 +5419,7 @@
 		(dnp no)
 		(uuid "536e2ce7-247f-4394-a121-a9e3e693b9a2")
 		(property "Reference" "J3"
-			(at 176.53 68.58 0)
+			(at 176.276 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5575,7 +5473,7 @@
 			)
 		)
 		(property "Spec" "FTDI"
-			(at 176.53 70.612 0)
+			(at 176.53 70.866 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5606,6 +5504,318 @@
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "First_lib:GND")
+		(at 92.71 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "543df1ae-e960-407c-89ef-f99a4d74f600")
+		(property "Reference" "#PWR07"
+			(at 92.71 49.276 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 92.71 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Ground"
+			(at 92.71 51.308 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin ""
+			(uuid "f8a0ec4f-9d8f-467c-9db3-0a9fae294705")
+		)
+		(instances
+			(project "First_kicad_proj"
+				(path "/bf263037-1375-4c88-8757-79a366da6f70"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "First_lib:GND")
+		(at 76.2 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55f0bcc8-92a6-477e-9abf-6a0befa3d1cd")
+		(property "Reference" "#PWR022"
+			(at 76.2 108.966 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.2 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Ground"
+			(at 76.2 110.998 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin ""
+			(uuid "c5b0aa09-eb71-4ce1-99e9-91465051e224")
+		)
+		(instances
+			(project "First_kicad_proj"
+				(path "/bf263037-1375-4c88-8757-79a366da6f70"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "First_lib:GND")
+		(at 116.84 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5cdba681-e267-4a4f-86ce-0459b4589e99")
+		(property "Reference" "#PWR012"
+			(at 116.84 111.506 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 116.84 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Ground"
+			(at 116.84 113.538 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin ""
+			(uuid "f8a0ec4f-9d8f-467c-9db3-0a9fae294705")
+		)
+		(instances
+			(project "First_kicad_proj"
+				(path "/bf263037-1375-4c88-8757-79a366da6f70"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "First_lib:GND")
+		(at 139.7 22.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "607a46ea-3061-453f-999d-74e1db4318b6")
+		(property "Reference" "#PWR013"
+			(at 139.7 30.226 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 139.7 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Ground"
+			(at 139.7 32.258 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin ""
+			(uuid "48e3c02f-ba29-403d-aec0-05eefaf16f60")
+		)
+		(instances
+			(project "First_kicad_proj"
+				(path "/bf263037-1375-4c88-8757-79a366da6f70"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -5718,8 +5928,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6ed833e3-4a4f-4926-a0e1-52ca1377738d")
-		(property "Reference" "C7"
-			(at 41.656 32.258 90)
+		(property "Reference" "C3"
+			(at 41.402 32.258 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5792,15 +6002,15 @@
 		(instances
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "C7")
+					(reference "C3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "First_lib:GND")
-		(at 196.85 104.14 270)
+		(lib_id "First_lib:VCC")
+		(at 50.8 72.39 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5808,9 +6018,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "78c6529d-9ef8-4b5b-bdf6-791ca85c6ea1")
-		(property "Reference" "GND9"
-			(at 196.85 111.506 0)
+		(uuid "73771a61-d1c5-4424-93ab-a4b60d39a034")
+		(property "Reference" "#PWR021"
+			(at 50.8 65.024 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5820,19 +6030,18 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 194.818 110.998 90)
+		(property "Value" "VCC"
+			(at 50.8 66.04 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 196.85 104.14 0)
+			(at 50.8 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5843,7 +6052,84 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 196.85 104.14 0)
+			(at 50.8 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Voltage at the Common Collector"
+			(at 50.8 62.738 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5f6caba8-95d8-4949-b7b8-ebe5d68fc55e")
+		)
+		(instances
+			(project "First_kicad_proj"
+				(path "/bf263037-1375-4c88-8757-79a366da6f70"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "First_lib:GND")
+		(at 53.34 143.51 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "84778527-3826-4ca9-9357-c1adc7e1c8c2")
+		(property "Reference" "#PWR020"
+			(at 53.34 150.876 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 53.34 149.86 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5854,7 +6140,7 @@
 			)
 		)
 		(property "Description" "Ground"
-			(at 194.564 104.14 0)
+			(at 53.34 152.908 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5865,12 +6151,12 @@
 			)
 		)
 		(pin ""
-			(uuid "105b3ad0-1d9e-4448-bb90-964bf170e9a4")
+			(uuid "f8a0ec4f-9d8f-467c-9db3-0a9fae294705")
 		)
 		(instances
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "GND9")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -5887,8 +6173,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "88faa48b-a8f7-42d1-8d64-3cc4f197e06c")
-		(property "Reference" "R1"
-			(at 76.454 32.004 90)
+		(property "Reference" "R2"
+			(at 76.2 31.75 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5961,15 +6247,15 @@
 		(instances
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "R1")
+					(reference "R2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "First_lib:GND")
-		(at 116.84 104.14 270)
+		(lib_id "First_lib:VCC")
+		(at 151.13 24.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5977,9 +6263,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "890ef387-63c8-4d57-98d0-2b356142dcd0")
-		(property "Reference" "GND7"
-			(at 116.84 111.506 0)
+		(fields_autoplaced yes)
+		(uuid "8b7cd8b7-9069-495e-a8c8-9f150ab86080")
+		(property "Reference" "#PWR08"
+			(at 151.13 16.764 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5989,19 +6276,18 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 114.808 110.744 90)
+		(property "Value" "VCC"
+			(at 151.13 17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 116.84 104.14 0)
+			(at 151.13 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6012,7 +6298,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 104.14 0)
+			(at 151.13 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6022,8 +6308,8 @@
 				)
 			)
 		)
-		(property "Description" "Ground"
-			(at 114.554 104.14 0)
+		(property "Description" "Voltage at the Common Collector"
+			(at 151.13 14.478 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6033,13 +6319,13 @@
 				)
 			)
 		)
-		(pin ""
-			(uuid "105b3ad0-1d9e-4448-bb90-964bf170e9a5")
+		(pin "1"
+			(uuid "5f6caba8-95d8-4949-b7b8-ebe5d68fc55e")
 		)
 		(instances
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "GND7")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -6056,7 +6342,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8bd3e8f7-5b7b-4548-b054-ba9e62aeee51")
-		(property "Reference" "C4"
+		(property "Reference" "C6"
 			(at 115.57 46.736 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6129,7 +6415,7 @@
 		(instances
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "C4")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -6146,8 +6432,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8bf9e966-893e-48fe-b79d-68995645367e")
-		(property "Reference" "C3"
-			(at 27.94 72.136 0)
+		(property "Reference" "C2"
+			(at 27.94 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6219,7 +6505,7 @@
 		(instances
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "C3")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -6227,7 +6513,7 @@
 	)
 	(symbol
 		(lib_id "First_lib:GND")
-		(at 38.1 39.37 270)
+		(at 101.6 101.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6235,8 +6521,243 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "8fb9d891-58c6-4d5e-9032-3cf7fc8d4756")
-		(property "Reference" "GND2"
+		(fields_autoplaced yes)
+		(uuid "94f13345-9ebb-4fca-9ae1-bf86253c4a6e")
+		(property "Reference" "#PWR014"
+			(at 101.6 108.966 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 101.6 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Ground"
+			(at 101.6 110.998 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin ""
+			(uuid "f8a0ec4f-9d8f-467c-9db3-0a9fae294705")
+		)
+		(instances
+			(project "First_kicad_proj"
+				(path "/bf263037-1375-4c88-8757-79a366da6f70"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "First_lib:VCC")
+		(at 50.8 21.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a484ef54-ff9b-467e-9eff-0cb49972aa37")
+		(property "Reference" "#PWR04"
+			(at 50.8 14.224 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VCC"
+			(at 50.8 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Voltage at the Common Collector"
+			(at 50.8 11.938 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5f6caba8-95d8-4949-b7b8-ebe5d68fc55e")
+		)
+		(instances
+			(project "First_kicad_proj"
+				(path "/bf263037-1375-4c88-8757-79a366da6f70"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "First_lib:GND")
+		(at 21.59 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7c76c22-b9d9-4de0-9ae8-1dc5dbde9c85")
+		(property "Reference" "#PWR015"
+			(at 21.59 88.646 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 21.59 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 21.59 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 21.59 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Ground"
+			(at 21.59 90.678 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin ""
+			(uuid "f8a0ec4f-9d8f-467c-9db3-0a9fae294705")
+		)
+		(instances
+			(project "First_kicad_proj"
+				(path "/bf263037-1375-4c88-8757-79a366da6f70"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "First_lib:GND")
+		(at 38.1 39.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a8d0aea9-50fd-49e5-aba5-84ff9b3d2114")
+		(property "Reference" "#PWR02"
 			(at 38.1 46.736 0)
 			(hide yes)
 			(show_name no)
@@ -6248,14 +6769,13 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 36.068 45.974 90)
+			(at 38.1 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -6281,7 +6801,7 @@
 			)
 		)
 		(property "Description" "Ground"
-			(at 35.814 39.37 0)
+			(at 38.1 48.768 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6292,20 +6812,20 @@
 			)
 		)
 		(pin ""
-			(uuid "105b3ad0-1d9e-4448-bb90-964bf170e9a6")
+			(uuid "f8a0ec4f-9d8f-467c-9db3-0a9fae294705")
 		)
 		(instances
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "GND2")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "First_lib:GND")
-		(at 76.2 101.6 270)
+		(lib_id "First_lib:VCC")
+		(at 109.22 25.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6313,9 +6833,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "a3cf9436-ae84-4d83-92d2-bbbffdf0d714")
-		(property "Reference" "GND12"
-			(at 76.2 108.966 0)
+		(fields_autoplaced yes)
+		(uuid "aa7926ae-5c7a-4325-af70-3e95e4ec6e44")
+		(property "Reference" "#PWR06"
+			(at 109.22 18.034 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6325,8 +6846,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 76.2 107.95 90)
+		(property "Value" "VCC"
+			(at 109.22 19.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6336,7 +6857,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 101.6 0)
+			(at 109.22 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6347,7 +6868,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 101.6 0)
+			(at 109.22 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6357,8 +6878,8 @@
 				)
 			)
 		)
-		(property "Description" "Ground"
-			(at 73.914 101.6 0)
+		(property "Description" "Voltage at the Common Collector"
+			(at 109.22 15.748 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6368,13 +6889,13 @@
 				)
 			)
 		)
-		(pin ""
-			(uuid "71bde3df-c7bd-4c2d-9353-c830e044ae62")
+		(pin "1"
+			(uuid "5f6caba8-95d8-4949-b7b8-ebe5d68fc55e")
 		)
 		(instances
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "GND12")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -6392,7 +6913,7 @@
 		(dnp no)
 		(uuid "b3ea089b-231b-47fb-939d-8273bd465873")
 		(property "Reference" "R3"
-			(at 111.76 30.48 90)
+			(at 112.014 30.48 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6472,240 +6993,6 @@
 		)
 	)
 	(symbol
-		(lib_id "First_lib:GND")
-		(at 92.71 41.91 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b49cc536-16d2-4877-92e4-c0e69e60ce56")
-		(property "Reference" "GND6"
-			(at 92.71 49.276 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 90.678 48.514 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 92.71 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 92.71 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Ground"
-			(at 90.424 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin ""
-			(uuid "105b3ad0-1d9e-4448-bb90-964bf170e9a7")
-		)
-		(instances
-			(project "First_kicad_proj"
-				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "GND6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "First_lib:GND")
-		(at 50.8 49.53 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b5b185d9-0272-4a47-8537-b2dd992ef1f8")
-		(property "Reference" "GND4"
-			(at 50.8 56.896 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 48.768 56.134 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Ground"
-			(at 48.514 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin ""
-			(uuid "105b3ad0-1d9e-4448-bb90-964bf170e9a8")
-		)
-		(instances
-			(project "First_kicad_proj"
-				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "GND4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "First_lib:GND")
-		(at 50.8 143.51 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bc16e0b1-6343-4e88-bddd-69d107d7c048")
-		(property "Reference" "GND1"
-			(at 50.8 150.876 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 50.8 149.098 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Ground"
-			(at 48.514 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin ""
-			(uuid "10122add-3ef3-4235-88dd-27e2deffdc6b")
-		)
-		(instances
-			(project "First_kicad_proj"
-				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "GND1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "First_lib:C")
 		(at 90.17 92.71 0)
 		(unit 1)
@@ -6716,8 +7003,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bd5c4690-a08d-4ef4-b3d4-d40edead4adf")
-		(property "Reference" "C2"
-			(at 90.17 87.122 0)
+		(property "Reference" "C4"
+			(at 90.17 86.868 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6789,7 +7076,7 @@
 		(instances
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "C2")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -6806,8 +7093,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bdd1efa1-7032-44a2-8a45-619faaf72764")
-		(property "Reference" "D2"
-			(at 57.15 33.0199 90)
+		(property "Reference" "D1"
+			(at 57.15 33.02 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6880,7 +7167,7 @@
 		(instances
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "D2")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -6888,7 +7175,7 @@
 	)
 	(symbol
 		(lib_id "First_lib:GND")
-		(at 21.59 81.28 270)
+		(at 50.8 143.51 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6896,9 +7183,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "bf4da45d-2a5c-43bd-a8e9-7ac26960e229")
-		(property "Reference" "GND11"
-			(at 21.59 88.646 0)
+		(uuid "bf9d7951-0afc-486f-a5db-a3bcab84beaf")
+		(property "Reference" "#PWR018"
+			(at 50.8 150.876 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6909,18 +7196,17 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 19.558 87.63 90)
+			(at 50.8 149.86 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 21.59 81.28 0)
+			(at 50.8 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6931,7 +7217,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 21.59 81.28 0)
+			(at 50.8 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6942,7 +7228,7 @@
 			)
 		)
 		(property "Description" "Ground"
-			(at 19.304 81.28 0)
+			(at 50.8 152.908 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6953,20 +7239,20 @@
 			)
 		)
 		(pin ""
-			(uuid "105b3ad0-1d9e-4448-bb90-964bf170e9a9")
+			(uuid "f8a0ec4f-9d8f-467c-9db3-0a9fae294705")
 		)
 		(instances
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "GND11")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "First_lib:VCC")
-		(at 199.39 68.58 90)
+		(lib_id "First_lib:GND")
+		(at 50.8 49.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6974,9 +7260,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "c3cf19f4-45aa-44e7-896f-1d86f1b21642")
-		(property "Reference" "VCC3"
-			(at 199.39 64.77 0)
+		(fields_autoplaced yes)
+		(uuid "c2200f5d-4cd0-4f7f-be52-582dfc957b21")
+		(property "Reference" "#PWR03"
+			(at 50.8 56.896 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6986,19 +7273,18 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
-			(at 197.358 66.04 90)
+		(property "Value" "GND"
+			(at 50.8 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 199.39 68.58 0)
+			(at 50.8 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7009,7 +7295,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 199.39 68.58 0)
+			(at 50.8 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7019,8 +7305,8 @@
 				)
 			)
 		)
-		(property "Description" "Voltage at the Common Collector"
-			(at 201.93 68.58 0)
+		(property "Description" "Ground"
+			(at 50.8 58.928 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7031,12 +7317,12 @@
 			)
 		)
 		(pin ""
-			(uuid "2daa0d3b-9bbb-4cf5-9eb0-d8053d8318c2")
+			(uuid "f8a0ec4f-9d8f-467c-9db3-0a9fae294705")
 		)
 		(instances
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "VCC3")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -7213,7 +7499,7 @@
 	)
 	(symbol
 		(lib_id "First_lib:VCC")
-		(at 48.26 69.85 90)
+		(at 199.39 71.12 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7221,9 +7507,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "ce60bb28-c8ed-4129-b750-e7bd8b7e6244")
-		(property "Reference" "VCC7"
-			(at 48.26 66.04 0)
+		(fields_autoplaced yes)
+		(uuid "d6f51ef3-0e3b-4d09-83d0-e06e07bcc2a5")
+		(property "Reference" "#PWR010"
+			(at 199.39 63.754 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7234,18 +7521,17 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 48.26 64.516 0)
+			(at 199.39 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 48.26 69.85 0)
+			(at 199.39 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7256,7 +7542,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 69.85 0)
+			(at 199.39 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7267,7 +7553,7 @@
 			)
 		)
 		(property "Description" "Voltage at the Common Collector"
-			(at 50.8 69.85 0)
+			(at 199.39 61.468 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7277,91 +7563,13 @@
 				)
 			)
 		)
-		(pin ""
-			(uuid "89bf5e2d-1aca-45fe-9a4d-721cda9a0986")
+		(pin "1"
+			(uuid "5f6caba8-95d8-4949-b7b8-ebe5d68fc55e")
 		)
 		(instances
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "VCC7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "First_lib:VCC")
-		(at 50.8 19.05 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d973ac50-0e69-423d-b02f-0e66e7b6f98a")
-		(property "Reference" "VCC1"
-			(at 50.8 15.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VCC"
-			(at 49.022 16.51 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 19.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 19.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Voltage at the Common Collector"
-			(at 53.34 19.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin ""
-			(uuid "2daa0d3b-9bbb-4cf5-9eb0-d8053d8318c3")
-		)
-		(instances
-			(project "First_kicad_proj"
-				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "VCC1")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -7369,7 +7577,7 @@
 	)
 	(symbol
 		(lib_id "First_lib:GND")
-		(at 73.66 49.53 270)
+		(at 162.56 104.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7377,9 +7585,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "e5910013-87e9-48dc-890c-f9472bd08e01")
-		(property "Reference" "GND5"
-			(at 73.66 56.896 0)
+		(fields_autoplaced yes)
+		(uuid "dad89e8e-0ab2-4d57-aeda-5d7df256214d")
+		(property "Reference" "#PWR011"
+			(at 162.56 111.506 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7390,18 +7599,17 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 71.628 56.134 90)
+			(at 162.56 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 49.53 0)
+			(at 162.56 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7412,7 +7620,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 49.53 0)
+			(at 162.56 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7423,7 +7631,7 @@
 			)
 		)
 		(property "Description" "Ground"
-			(at 71.374 49.53 0)
+			(at 162.56 113.538 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7434,12 +7642,12 @@
 			)
 		)
 		(pin ""
-			(uuid "105b3ad0-1d9e-4448-bb90-964bf170e9aa")
+			(uuid "f8a0ec4f-9d8f-467c-9db3-0a9fae294705")
 		)
 		(instances
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "GND5")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -7447,7 +7655,7 @@
 	)
 	(symbol
 		(lib_id "First_lib:VCC")
-		(at 109.22 22.86 90)
+		(at 53.34 72.39 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7455,9 +7663,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "e8b88309-30f7-4a89-920c-a71dc4ae4d33")
-		(property "Reference" "VCC2"
-			(at 109.22 19.05 0)
+		(uuid "e05eb9a4-b514-472f-8ee3-96ff2242686e")
+		(property "Reference" "#PWR023"
+			(at 53.34 65.024 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7468,18 +7676,17 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 107.442 20.066 90)
+			(at 53.34 66.04 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 109.22 22.86 0)
+			(at 53.34 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7490,7 +7697,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 22.86 0)
+			(at 53.34 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7501,7 +7708,7 @@
 			)
 		)
 		(property "Description" "Voltage at the Common Collector"
-			(at 111.76 22.86 0)
+			(at 53.34 62.738 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7511,13 +7718,13 @@
 				)
 			)
 		)
-		(pin ""
-			(uuid "2daa0d3b-9bbb-4cf5-9eb0-d8053d8318c4")
+		(pin "1"
+			(uuid "5f6caba8-95d8-4949-b7b8-ebe5d68fc55e")
 		)
 		(instances
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "VCC2")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -7534,8 +7741,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e9caba78-3839-4bf9-8c66-0d547098276a")
-		(property "Reference" "R2"
-			(at 53.34 43.688 90)
+		(property "Reference" "R1"
+			(at 53.34 43.434 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7608,7 +7815,241 @@
 		(instances
 			(project "First_kicad_proj"
 				(path "/bf263037-1375-4c88-8757-79a366da6f70"
-					(reference "R2")
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "First_lib:GND")
+		(at 73.66 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eec1f2e5-35c1-4393-ac84-b80eec19ee13")
+		(property "Reference" "#PWR05"
+			(at 73.66 56.896 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 73.66 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Ground"
+			(at 73.66 58.928 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin ""
+			(uuid "f8a0ec4f-9d8f-467c-9db3-0a9fae294705")
+		)
+		(instances
+			(project "First_kicad_proj"
+				(path "/bf263037-1375-4c88-8757-79a366da6f70"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "First_lib:VCC")
+		(at 165.1 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fab37237-87a0-4c00-863a-2e3ab9a0b3ba")
+		(property "Reference" "#PWR016"
+			(at 165.1 63.754 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VCC"
+			(at 165.1 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Voltage at the Common Collector"
+			(at 165.1 61.468 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5f6caba8-95d8-4949-b7b8-ebe5d68fc55e")
+		)
+		(instances
+			(project "First_kicad_proj"
+				(path "/bf263037-1375-4c88-8757-79a366da6f70"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "First_lib:GND")
+		(at 196.85 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fad3d9a4-9276-4dd5-afc5-6e5bedb844d3")
+		(property "Reference" "#PWR09"
+			(at 196.85 111.506 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 196.85 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Ground"
+			(at 196.85 113.538 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin ""
+			(uuid "f8a0ec4f-9d8f-467c-9db3-0a9fae294705")
+		)
+		(instances
+			(project "First_kicad_proj"
+				(path "/bf263037-1375-4c88-8757-79a366da6f70"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)

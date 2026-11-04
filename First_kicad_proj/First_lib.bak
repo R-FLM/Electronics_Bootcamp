@@ -1072,6 +1072,7 @@
 		(embedded_fonts no)
 	)
 	(symbol "GND"
+		(power global)
 		(pin_numbers
 			(hide yes)
 		)
@@ -1084,8 +1085,8 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "GND"
-			(at 7.366 0 0)
+		(property "Reference" "#PWR"
+			(at 0 -7.366 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -1096,7 +1097,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 7.366 0 0)
+			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1128,7 +1129,7 @@
 			)
 		)
 		(property "Description" "Ground"
-			(at 0 -2.286 0)
+			(at 0 -9.398 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -1152,19 +1153,7 @@
 		(symbol "GND_1_1"
 			(polyline
 				(pts
-					(xy 2.54 0) (xy 3.81 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 5.08 0) (xy 3.8127 0.8038) (xy 3.8127 -0.8038) (xy 5.08 0)
+					(xy 0 -3.81) (xy 0.8038 -2.5427) (xy -0.8038 -2.5427) (xy 0 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -1175,7 +1164,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 0 0)
+				(at 0 0 270)
 				(length 2.54)
 				(name ""
 					(effects
@@ -1184,7 +1173,7 @@
 						)
 					)
 				)
-				(number "1"
+				(number ""
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2174,6 +2163,7 @@
 		(embedded_fonts no)
 	)
 	(symbol "VCC"
+		(power global)
 		(pin_numbers
 			(hide yes)
 		)
@@ -2186,8 +2176,8 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "VCC"
-			(at 3.81 0 0)
+		(property "Reference" "#PWR"
+			(at 0 2.794 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
