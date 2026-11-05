@@ -1,0 +1,145 @@
+(footprint "LED_0603_1608M_RED"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -1.275 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "c8938a03-1047-48bb-8167-0f5ca63fee24")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "LED_0603_1608M_RED"
+		(at 0 1.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "5cb7c9c0-0662-4e54-bb2d-67e4a8be9e02")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.mouser.fr/en/ProductDetail/Lumex/SML-LX0603IW-TR?qs=sGAEpiMZZMvVL5Kk7ZYykVwAM0Y%252B7BnPfXWhOQRjJ7w%3D"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "015aa3c1-f57a-4d10-991f-bbe4de457493")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c899f95e-85a1-4f3c-a43d-1cc081c568c1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.2 -0.5)
+		(end 0.2 -0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "54eccbdb-ece6-455c-ba2e-ee4d6c6258c5")
+	)
+	(fp_line
+		(start -0.2 0.5)
+		(end 0.2 0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "d2fc34a8-ec0f-4002-a610-42c1bc792ceb")
+	)
+	(fp_line
+		(start -0.1 -0.2)
+		(end -0.1 0.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "fd9cdd77-783c-4f2d-ab86-3b22c97327f9")
+	)
+	(fp_line
+		(start -0.1 0)
+		(end 0.1 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "62d1d6c7-1d01-43d5-8bc3-643b440b0b2b")
+	)
+	(fp_circle
+		(center 1.475 0.6)
+		(end 1.575 0.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "d9da3674-d75e-4663-83ba-1e7937a23369")
+	)
+	(fp_rect
+		(start -0.8 -0.4)
+		(end 0.8 0.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "ef23b88d-3de2-4cd5-bdc0-e1465f37e137")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "dbac22c4-c578-4176-86ca-0213ab9e0cee")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.8 0)
+		(size 0.8 1)
+		(layers "F.Cu" "F.Mask")
+		(uuid "ad457c93-efac-4c8b-8ced-a591c190710d")
+	)
+	(pad "2" smd rect
+		(at 0.8 0)
+		(size 0.8 1)
+		(layers "F.Cu" "F.Mask")
+		(uuid "7fa8edd4-d77e-4c19-ac83-766037534e8c")
+	)
+	(embedded_fonts no)
+)

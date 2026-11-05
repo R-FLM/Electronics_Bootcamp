@@ -1,0 +1,127 @@
+(footprint "C_0603_1608M_12pF"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -1.75 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "be345b9c-6410-4dab-8869-cb02b95f06c5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "C_0603_1608M_12pF"
+		(at 0 1.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "f44d0111-909e-4a00-99ed-8dd36dbbceea")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.mouser.fr/en/ProductDetail/Murata-Electronics/GRM1885C2E120FW07J?qs=d0WKAl%252BL4KbD%2Ff0qK%252BVCeQ%3D%3D"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "29bb5e51-83b3-40c9-81ff-9888e3e11a46")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "87a997aa-0f1e-4ad8-b5c7-564f5e98bbce")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.05 -0.55)
+		(end 0.05 -0.55)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "299629cd-c6cc-437d-a414-0a46e2341af0")
+	)
+	(fp_line
+		(start -0.05 0.55)
+		(end 0.05 0.55)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "261c388c-d3bb-4a57-9388-45acac4a46fa")
+	)
+	(fp_rect
+		(start -1.6 -0.8)
+		(end 1.6 0.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "92431cfe-e088-4b40-afc7-71e75ec89e96")
+	)
+	(fp_rect
+		(start -0.8 -0.4)
+		(end 0.8 0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "8916fb37-c644-420d-b397-45786c7fb66a")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 3.55 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "5dc502a5-a5e4-4430-9350-303b7f623b31")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.8 0)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.15)
+		(uuid "50c3924b-548e-477f-baab-aa44a97e0a3f")
+	)
+	(pad "2" smd roundrect
+		(at 0.8 0)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.15)
+		(uuid "2d99f6fd-8941-4033-b4bc-8156c8c0bc24")
+	)
+	(embedded_fonts no)
+)

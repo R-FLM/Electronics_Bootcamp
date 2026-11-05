@@ -1,0 +1,127 @@
+(footprint "C_0603_1608M_100nF"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -1.7 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a724fdae-b38c-4529-bf97-9fde5a0e9399")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "C_0603_1608M_100nF"
+		(at 0 1.825 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "93e5453d-3870-4dbf-9189-17672fddd8e3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.mouser.fr/en/ProductDetail/Vishay-Vitramon/GA0603Y104MBXAR31G?qs=uwxL4vQweFMKFiCe6YWxnw%3D%3D"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5cf9e14b-f76e-4463-acdd-22baf995af7b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "64a9f5df-ac43-48b6-84fd-61168e9db4c2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.05 -0.55)
+		(end 0.05 -0.55)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3113ad1d-0ead-470d-a3d0-77e57a11489c")
+	)
+	(fp_line
+		(start -0.05 0.55)
+		(end 0.05 0.55)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3f32751f-b090-43d3-a98f-60bc217c74a3")
+	)
+	(fp_rect
+		(start -1.6 -0.8)
+		(end 1.6 0.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "199bedff-7dec-4933-b5ec-77bfba24e410")
+	)
+	(fp_rect
+		(start -0.8 -0.4)
+		(end 0.8 0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "945bdf28-c27e-4a1c-9709-03591494ee38")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 3.3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "9d7b3749-c46d-410d-973d-3de5eed38a83")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.8 0)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.15)
+		(uuid "8d89aee7-92c6-45fc-9ac7-238101427770")
+	)
+	(pad "2" smd roundrect
+		(at 0.8 0)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.15)
+		(uuid "ea358243-48a2-4e87-95e2-03e0cf15815e")
+	)
+	(embedded_fonts no)
+)
