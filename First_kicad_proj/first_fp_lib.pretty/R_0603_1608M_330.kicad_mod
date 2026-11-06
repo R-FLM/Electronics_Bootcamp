@@ -7,7 +7,7 @@
 		(at 0 -1.575 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "51cf6074-9225-47b9-a3de-01d8a4faffae")
+		(uuid "48ee8049-6956-4552-ac75-17ac8bc574d5")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 0 1.65 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "bdce83b6-dc6f-446e-a371-7eaf3d0a3750")
+		(uuid "514d5d3d-623f-4d82-a1c2-42c0ccce1fe7")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "0a03258f-e0e5-43b7-81f3-1e594a925959")
+		(uuid "10094435-290f-41a0-9d59-7e43d1727447")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "f156ce41-3ef7-46f9-9677-db348ad94ce3")
+		(uuid "f56a61f1-fa70-4577-a91b-bfa6b4402e6e")
 		(effects
 			(font
 				(size 1 1)
@@ -63,7 +63,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "3e243372-8c44-496a-afa9-3dc3164f4ede")
+		(uuid "d3bac383-0a28-4306-a291-1edde59ad224")
 	)
 	(fp_line
 		(start -0.05 0.55)
@@ -73,7 +73,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "175c436f-b8c0-42e3-88d1-e8336c62141e")
+		(uuid "42646b2f-8076-4645-a163-9521488fd904")
 	)
 	(fp_rect
 		(start -1.6 -0.8)
@@ -84,7 +84,7 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "886d1ebd-dba2-4666-861f-b525e26921f2")
+		(uuid "53c76622-0957-4925-bf1d-4ad77adc6446")
 	)
 	(fp_rect
 		(start -0.8 -0.4)
@@ -95,13 +95,13 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "55801a35-4205-4ebe-becf-caa3c4287d21")
+		(uuid "77d9778f-285f-4228-9cf7-0aa05f1c0737")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 3.125 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "ea2a10f7-0fd5-4ed1-8d1b-4c42e96c8e76")
+		(uuid "afcd13c8-8d8b-4229-8287-8cf8cb61fb9f")
 		(effects
 			(font
 				(size 1 1)
@@ -114,14 +114,25 @@
 		(size 1 1)
 		(layers "F.Cu" "F.Mask")
 		(roundrect_rratio 0.15)
-		(uuid "c941ca9d-004f-4881-bf46-fa4b55b4eee4")
+		(uuid "8d7bb2ef-5fdf-4f00-b14e-43614f0d8af8")
 	)
 	(pad "2" smd roundrect
 		(at 0.8 0)
 		(size 1 1)
 		(layers "F.Cu" "F.Mask")
 		(roundrect_rratio 0.15)
-		(uuid "254d9c92-a10a-4665-b808-af7e6c324a26")
+		(uuid "e6ffff45-0f64-4a49-854c-d8ae4453c410")
 	)
 	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

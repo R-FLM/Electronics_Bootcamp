@@ -63,7 +63,7 @@
 		)
 		(symbol "ATmega328P-A_1_1"
 			(rectangle
-				(start -19.05 31.75)
+				(start -22.86 31.75)
 				(end 0 -31.75)
 				(stroke
 					(width 0.254)
@@ -90,6 +90,9 @@
 						)
 					)
 				)
+				(alternate "INT1" bidirectional line)
+				(alternate "OCB2" bidirectional line)
+				(alternate "PCINT19" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 2.54 -22.86 180)
@@ -108,9 +111,12 @@
 						)
 					)
 				)
+				(alternate "PCINT20" bidirectional line)
+				(alternate "T0" bidirectional line)
+				(alternate "XCK" bidirectional line)
 			)
 			(pin power_in line
-				(at -6.35 -34.29 90)
+				(at -8.89 -34.29 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -128,7 +134,7 @@
 				)
 			)
 			(pin power_in line
-				(at -8.89 34.29 270)
+				(at -12.7 34.29 270)
 				(length 2.54)
 				(name "VCC"
 					(effects
@@ -146,7 +152,7 @@
 				)
 			)
 			(pin power_in line
-				(at -8.89 -34.29 90)
+				(at -11.43 -34.29 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -164,7 +170,7 @@
 				)
 			)
 			(pin power_in line
-				(at -11.43 34.29 270)
+				(at -15.24 34.29 270)
 				(length 2.54)
 				(name "VCC"
 					(effects
@@ -198,6 +204,9 @@
 						)
 					)
 				)
+				(alternate "PCINT6" bidirectional line)
+				(alternate "TOSC1" bidirectional line)
+				(alternate "XTAL1" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 2.54 12.7 180)
@@ -216,6 +225,9 @@
 						)
 					)
 				)
+				(alternate "PCINT7" bidirectional line)
+				(alternate "TOSC2" bidirectional line)
+				(alternate "XTAL2" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 2.54 -25.4 180)
@@ -234,6 +246,9 @@
 						)
 					)
 				)
+				(alternate "OC0B" bidirectional line)
+				(alternate "PCINT21" bidirectional line)
+				(alternate "T1" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 2.54 -27.94 180)
@@ -252,6 +267,9 @@
 						)
 					)
 				)
+				(alternate "AIN0" bidirectional line)
+				(alternate "OC0A" bidirectional line)
+				(alternate "PCINT22" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 2.54 -30.48 180)
@@ -270,6 +288,8 @@
 						)
 					)
 				)
+				(alternate "AIN1" bidirectional line)
+				(alternate "PCINT23" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 2.54 30.48 180)
@@ -288,6 +308,9 @@
 						)
 					)
 				)
+				(alternate "CLKO" bidirectional line)
+				(alternate "ICP1" bidirectional line)
+				(alternate "PCINT0" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 2.54 27.94 180)
@@ -306,6 +329,8 @@
 						)
 					)
 				)
+				(alternate "OC1A" bidirectional line)
+				(alternate "PCINT1" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 2.54 25.4 180)
@@ -324,6 +349,9 @@
 						)
 					)
 				)
+				(alternate "OC1B" bidirectional line)
+				(alternate "PCINT2" bidirectional line)
+				(alternate "~{SS}" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 2.54 22.86 180)
@@ -342,6 +370,9 @@
 						)
 					)
 				)
+				(alternate "MOSI" bidirectional line)
+				(alternate "OC2A" bidirectional line)
+				(alternate "PCINT3" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 2.54 20.32 180)
@@ -360,6 +391,8 @@
 						)
 					)
 				)
+				(alternate "MISO" bidirectional line)
+				(alternate "PCINT4" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 2.54 17.78 180)
@@ -378,9 +411,11 @@
 						)
 					)
 				)
+				(alternate "PCINT5" bidirectional line)
+				(alternate "SCK" bidirectional line)
 			)
 			(pin power_in line
-				(at -6.35 34.29 270)
+				(at -10.16 34.29 270)
 				(length 2.54)
 				(name "AVCC"
 					(effects
@@ -398,7 +433,7 @@
 				)
 			)
 			(pin input line
-				(at -21.59 25.4 0)
+				(at -25.4 25.4 0)
 				(length 2.54)
 				(name "ADC6"
 					(effects
@@ -416,7 +451,7 @@
 				)
 			)
 			(pin passive line
-				(at -21.59 30.48 0)
+				(at -25.4 30.48 0)
 				(length 2.54)
 				(name "AREF"
 					(effects
@@ -434,7 +469,7 @@
 				)
 			)
 			(pin power_in line
-				(at -11.43 -34.29 90)
+				(at -13.97 -34.29 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -452,7 +487,7 @@
 				)
 			)
 			(pin input line
-				(at -21.59 22.86 0)
+				(at -25.4 22.86 0)
 				(length 2.54)
 				(name "ADC7"
 					(effects
@@ -486,6 +521,8 @@
 						)
 					)
 				)
+				(alternate "ADC0" bidirectional line)
+				(alternate "PCINT8" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 2.54 5.08 180)
@@ -504,6 +541,8 @@
 						)
 					)
 				)
+				(alternate "ADC1" bidirectional line)
+				(alternate "PCINT9" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 2.54 2.54 180)
@@ -522,6 +561,8 @@
 						)
 					)
 				)
+				(alternate "ADC2" bidirectional line)
+				(alternate "PCINT10" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 2.54 0 180)
@@ -540,6 +581,8 @@
 						)
 					)
 				)
+				(alternate "ADC3" bidirectional line)
+				(alternate "PCINT11" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 2.54 -2.54 180)
@@ -558,6 +601,9 @@
 						)
 					)
 				)
+				(alternate "ADC4" bidirectional line)
+				(alternate "PCINT12" bidirectional line)
+				(alternate "SDA" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 2.54 -5.08 180)
@@ -576,6 +622,9 @@
 						)
 					)
 				)
+				(alternate "ADC5" bidirectional line)
+				(alternate "PCINT13" bidirectional line)
+				(alternate "SCL" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 2.54 -7.62 180)
@@ -594,6 +643,8 @@
 						)
 					)
 				)
+				(alternate "PCINT14" bidirectional line)
+				(alternate "~{RESET}" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 2.54 -12.7 180)
@@ -612,6 +663,8 @@
 						)
 					)
 				)
+				(alternate "PCINT16" bidirectional line)
+				(alternate "RXD" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 2.54 -15.24 180)
@@ -630,6 +683,8 @@
 						)
 					)
 				)
+				(alternate "PCINT17" bidirectional line)
+				(alternate "TXD" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 2.54 -17.78 180)
@@ -648,6 +703,8 @@
 						)
 					)
 				)
+				(alternate "INT0" bidirectional line)
+				(alternate "PCINT18" bidirectional line)
 			)
 		)
 		(embedded_fonts no)
