@@ -7,6 +7,11 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "Bootcamp_elec_flomulle")
+		(date "2026-11-13")
+		(rev "0.42")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(2 "B.Cu" signal)
@@ -95,7 +100,7 @@
 		(capping no)
 		(filling no)
 		(pcbplotparams
-			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(layerselection 0x00000000_00000000_55555555_57555575)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
@@ -117,16 +122,16 @@
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plot_black_and_white yes)
+			(plot_black_and_white no)
 			(sketchpadsonfab no)
 			(plotpadnumbers no)
 			(hidednponfab no)
 			(sketchdnponfab yes)
 			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
-			(outputformat 1)
+			(outputformat 4)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
 			(outputdirectory "")
 		)
@@ -9888,7 +9893,7 @@
 		(net "/RXI")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30027)
+		(priority 30026)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10090,7 +10095,7 @@
 		(net "/D6")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30021)
+		(priority 30020)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10123,7 +10128,7 @@
 		(net "/TXO")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30003)
+		(priority 30008)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10145,8 +10150,10 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 152.655783 80.711995) (xy 152.797204 80.853416) (xy 154.002314 80.442305) (xy 153.78786 79.721339)
-				(xy 153.066895 79.506886)
+				(xy 153.781789 79.719533) (xy 153.788741 79.725175) (xy 153.789666 79.72741) (xy 153.999107 80.431526)
+				(xy 153.998182 80.440433) (xy 153.991671 80.445935) (xy 152.804101 80.851062) (xy 152.795164 80.85049)
+				(xy 152.79205 80.848262) (xy 152.660936 80.717148) (xy 152.657509 80.708875) (xy 152.658136 80.705097)
+				(xy 152.991665 79.72741) (xy 153.063264 79.517526) (xy 153.069178 79.510805) (xy 153.077673 79.510092)
 			)
 		)
 	)
@@ -10154,7 +10161,7 @@
 		(net "/D9")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30002)
+		(priority 30001)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10190,7 +10197,7 @@
 		(net "/A0")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30018)
+		(priority 30017)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10225,7 +10232,7 @@
 		(net "/TXO")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30009)
+		(priority 30007)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10260,7 +10267,7 @@
 		(net "/D8")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30015)
+		(priority 30013)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10297,7 +10304,7 @@
 		(net "/A1")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30020)
+		(priority 30019)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10333,7 +10340,7 @@
 		(net "/RXI")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30026)
+		(priority 30025)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10366,7 +10373,7 @@
 		(net "/RXI")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30010)
+		(priority 30024)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10388,8 +10395,10 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 150.10901 78.72557) (xy 150.065748 78.858717) (xy 150.512285 79.56269) (xy 151.431059 79.428901)
-				(xy 151.47636 79.011307)
+				(xy 151.465977 79.009137) (xy 151.473375 79.014184) (xy 151.475216 79.021852) (xy 151.432036 79.41989)
+				(xy 151.427737 79.427745) (xy 151.42209 79.430206) (xy 150.519789 79.561597) (xy 150.511108 79.559398)
+				(xy 150.508223 79.556286) (xy 150.162537 79.011307) (xy 150.068694 78.863362) (xy 150.067157 78.854542)
+				(xy 150.067441 78.853506) (xy 150.105766 78.735552) (xy 150.11158 78.728745) (xy 150.119284 78.727717)
 			)
 		)
 	)
@@ -10397,7 +10406,7 @@
 		(net "/D4")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30019)
+		(priority 30018)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10431,7 +10440,7 @@
 		(net "/D3")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30017)
+		(priority 30015)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10467,7 +10476,7 @@
 		(net "DTR")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30001)
+		(priority 30002)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10489,8 +10498,10 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 156.224608 81.2246) (xy 156.424607 81.224599) (xy 157.0746 80.4746) (xy 156.324601 79.7236)
-				(xy 155.574605 80.4746)
+				(xy 156.332869 79.731879) (xy 156.33288 79.73189) (xy 157.066906 80.466896) (xy 157.070327 80.475172)
+				(xy 157.067469 80.482827) (xy 156.428105 81.220562) (xy 156.420097 81.224569) (xy 156.419263 81.224599)
+				(xy 156.229951 81.224599) (xy 156.221678 81.221172) (xy 156.221109 81.220562) (xy 155.581735 80.482827)
+				(xy 155.578907 80.47433) (xy 155.582297 80.466897) (xy 156.316322 79.731889) (xy 156.324593 79.728458)
 			)
 		)
 	)
@@ -10498,7 +10509,7 @@
 		(net "SCK")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30006)
+		(priority 30004)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10531,7 +10542,7 @@
 		(net "MOSI")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30008)
+		(priority 30006)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10564,7 +10575,7 @@
 		(net "RST")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30013)
+		(priority 30011)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10599,7 +10610,7 @@
 		(net "/A2")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30012)
+		(priority 30010)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10633,7 +10644,7 @@
 		(net "RAW")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30011)
+		(priority 30009)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10670,7 +10681,7 @@
 		(net "MISO")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30005)
+		(priority 30003)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10703,7 +10714,7 @@
 		(net "RST")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30023)
+		(priority 30022)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10736,7 +10747,7 @@
 		(net "/D7")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30022)
+		(priority 30021)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10769,7 +10780,7 @@
 		(net "/A3")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30007)
+		(priority 30005)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10802,7 +10813,7 @@
 		(net "RST")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30014)
+		(priority 30012)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10859,8 +10870,13 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 157.793166 80.894702) (xy 158.005298 81.106834) (xy 159.490222 80.470438) (xy 159.105488 79.794512)
-				(xy 158.28 79.55934)
+				(xy 158.29249 79.562898) (xy 159.098681 79.792572) (xy 159.102697 79.79462) (xy 159.106043 79.797246)
+				(xy 159.108988 79.800662) (xy 159.48259 80.457032) (xy 159.484031 80.461362) (xy 159.484253 80.46313)
+				(xy 159.481883 80.471766) (xy 159.481881 80.471768) (xy 159.48112 80.472747) (xy 159.476492 80.476321)
+				(xy 158.014716 81.102796) (xy 158.01025 81.103741) (xy 158.007232 81.103778) (xy 157.998918 81.100453)
+				(xy 157.998816 81.100352) (xy 157.800084 80.90162) (xy 157.797548 80.897825) (xy 157.796353 80.894939)
+				(xy 157.796171 80.886456) (xy 157.945695 80.476321) (xy 158.275473 79.571752) (xy 158.277841 79.567854)
+				(xy 158.279213 79.566358) (xy 158.286903 79.562604) (xy 158.288365 79.562488)
 			)
 		)
 	)
@@ -10868,7 +10884,7 @@
 		(net "/D5")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30024)
+		(priority 30023)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10901,7 +10917,7 @@
 		(net "/D10")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30016)
+		(priority 30014)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10937,7 +10953,7 @@
 		(net "/D2")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30028)
+		(priority 30027)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10972,7 +10988,7 @@
 		(net "RAW")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30004)
+		(priority 30016)
 		(attr
 			(teardrop
 				(type padvia)
@@ -10995,9 +11011,15 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 149.501464 80.718732) (xy 149.678 80.488658) (xy 149.678001 80.488658) (xy 149.691386 80.500296)
-				(xy 149.422305 79.506886) (xy 148.696841 79.725876) (xy 148.486886 80.442305) (xy 149.488078 80.707094)
-				(xy 149.501463 80.718732)
+				(xy 149.414867 79.510773) (xy 149.422755 79.515002) (xy 149.423782 79.516257) (xy 149.426021 79.520608)
+				(xy 149.683901 80.472665) (xy 149.684212 80.47722) (xy 149.683901 80.479632) (xy 149.680309 80.486662)
+				(xy 149.679678 80.487255) (xy 149.678999 80.487735) (xy 149.679049 80.487796) (xy 149.677998 80.488656)
+				(xy 149.510452 80.707016) (xy 149.507023 80.710025) (xy 149.505479 80.710917) (xy 149.496601 80.712088)
+				(xy 149.49659 80.712085) (xy 149.495187 80.711708) (xy 149.490548 80.70924) (xy 149.488372 80.707349)
+				(xy 149.488104 80.707099) (xy 148.599685 80.472137) (xy 148.599684 80.472136) (xy 148.50075 80.445971)
+				(xy 148.496646 80.443963) (xy 148.49523 80.442883) (xy 148.49073 80.435147) (xy 148.490512 80.433528)
+				(xy 148.490878 80.428679) (xy 148.694404 79.734187) (xy 148.696515 79.730145) (xy 148.698684 79.727451)
+				(xy 148.704414 79.723589) (xy 149.408553 79.511036) (xy 149.413093 79.510596)
 			)
 		)
 	)
